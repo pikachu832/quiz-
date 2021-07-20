@@ -1,0 +1,205 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #playlist{
+            list-style: none;
+        }
+        #playlist li a{
+            color:black;
+            text-decoration: none;
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
+    <title>learning after corona - robotics</title>
+    <link rel="stylesheet" href="styleNat.css">
+</head>
+<body id="body">
+    <!-- <div id="background">
+        <img id="middle" src="https://www.intelrealsense.com/wp-content/uploads/2020/04/header_robotic_automation-1024x576.jpg" height="200px" width="200px">
+    </div> -->
+
+    <!-- <a id="Gamer" target="blank">
+        <img src="https://i2.wp.com/fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/d4e2f6d3cb8fcbd185e0600dc6d126dd-1592628654/Logo%20Comp/animate-your-discord-server-icon-or-profile-picture-in-24-hours.gif" height="112" width="112" title="article">
+    </a> -->
+
+    
+<br>
+
+    <audio src="app132/Anna Zak - Tik Tok (official Video) אנה זק.mp4" controls id="audioPlayer" >
+        Sorry, your browser doesn't support html5!
+    </audio>
+    <ul id="playlist">
+        <li><a href="app132/(Prod. By Yinon Yahel) עדן בן זקן - יום הפוך.mp4"></a></li>
+        <li><a href="app132/Static and Ben El Kvish HaHoff (Prod. by Jordi) סטטיק ובן אל תבורי - כביש החוף (Prod. by Jordi.mp4"></a></li>
+        <li><a href="app132/אגם בוחבוט - כמו בריו.mp4"></a></li>
+        <li><a href="app132/אייל גולן ומשה פרץ - כמה ימים.mp4"></a></li>
+        <li><a href="app132/ישי ריבו - לשוב הביתה ishay Ribo - Lashuv Habaita.mp4"></a></li>
+        <li><a href="app132/משה פרץ - טיסה 5325.mp4"></a></li>
+        <li><a href="app132/סטפן לגר - תראי מה עשית (Prod. By Johnny Goldstein) Stephane Legar - Look what you did.mp4"></a></li>
+        <li><a href="app132/עדן בן זקן - אנא מג'נונה (Prod. by Jordi).mp4"></a></li>
+        <li><a href="app132/עדן בן זקן - הלו הלו (Prod. by Moshe & Ofek).mp4"></a></li>
+        <li><a href="app132/עדן בן זקן - כולם באילת (Hermanos Remix).mp4"></a></li>
+        <li><a href="app132/עדן בן זקן ואיתי גלו - מועבט Eden Ben Zaken & Itay Galo - Moabet.mp4"></a></li>
+        <li><a href="app132/עומר אדם - יעשו לנו כבוד.mp4"></a></li>
+        <li><a href="app132/עומר אדם - פרצופים (Prod. by Johnny Goldstein).mp4"></a></li>
+        <li><a href="app132/רן דנקר - בית משוגעים (Prod. By Jordi).mp4"></a></li>
+        <li><a href="app132/David Guetta, Bebe Rexha & J Balvin - Say My Name (Official Video).mp4"></a></li>
+        <li><a href="app132/Ed Sheeran - Shape of You (Official Music Video).mp4"></a></li>
+        <li><a href="app132/Maroon 5 - Animals (Official Music Video).mp4"></a></li>
+        <li><a href="app132/Maroon 5 - Girls Like You ft. Cardi B (Volume 2) (Official Music Video).mp4"></a></li>
+        <li><a href="app132/Maroon 5 - Payphone ft. Wiz Khalifa (Explicit) (Official Music Video).mp4"></a></li>
+        <li><a href="app132/Maroon 5 - Sugar (Official Music Video).mp4"></a></li>
+        <li><a href="app132/Nightcore - Montero (Call Me By Your Name) Lil Nas X (Lyrics).mp4"></a></li>
+        <li><a href="app132/Nightcore - You Broke Me First (Lyrics).mp4"></a></li>
+        <li><a href="app132/Nightcore oops!... i did it again [NV].mp4"></a></li>
+        <li><a href="app132/Pharrell Williams - Freedom (Video).mp4"></a></li>
+        <li><a href="app132/Pharrell Williams - Happy (Official Music Video).mp4"></a></li>
+        <li><a href="app132/Trevor Daniel - Falling (Lyrics).mp4"></a></li>
+        <li><a href="app132/Young Thug, 2 Chainz, Wiz Khalifa & PnB Rock Gang Up (The Fate of the Furious The Album) [VIDEO.mp4"></a></li>
+
+    </ul>
+    
+<br>
+
+    <a id="PreviousSong" style='font-size:100px;' href="#" onclick="playlist.prevTrack();">&#8678</a>
+    <a id="TheNextSong" style='font-size:100px;' href="#" onclick="playlist.nextTrack();">&#8680</a>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="audioPlayerNat.js"></script>
+    <script>
+        var config = {
+          autoplay: true, 
+            loop: true,
+            shuffle: true
+        };
+        var playlist = new AudioPlaylist();
+        
+    </script>
+
+    <div id="hello">
+        <h1 id="welcome">!ברוך הבא</h1>
+        <p>הכנס את שם:</p>
+        <br><br>
+        <input id="name1" placeholder="הכנס את השם השלך">
+        <input id="name2" placeholder="הכנס את השם היריב">
+        <button id="submitButton">שלח</button>
+        <br><br>
+        <div id="helloOutput" hidden>
+            שלום
+            <span id="name1Output"></span>
+            and
+            <span id="name2Output"></span>
+            ברוכים הבאים לאתר שלנו בנושא גיימינג.
+            <br> גם תלמדו ביחד ותכירו היטב.
+            <br> בהצלחה!
+        </div>
+        <br>
+        <button id="startButton" hidden>התחל</button></button>
+    </div>
+
+    <!-- tic tac toe game -->
+    <div id="firstLevel" hidden>
+        <table id="table" rules="all">
+            <tr>
+                <td id="qBut1"></td>
+                <td id="qBut2"></td>
+                <td id="qBut3"></td>
+            </tr>
+            <tr>
+                <td id="qBut4"></td>
+                <td id="qBut5"></td>
+                <td id="qBut6"></td>
+            </tr>
+            <tr>
+                <td id="qBut7"></td>
+                <td id="qBut8"></td>
+                <td id="qBut9"></td>
+            </tr>
+        </table>
+        <div id="instructions">
+            בשלב זה תוכלו להכיר זה את זה על ידי איקס עיגול.
+            <br>
+            <ul>
+                <b> הכללים: </b>
+                    <li> כל שחקן בוחר ריבוע לשים בו X או O. </li>
+                    <li> ה- X מתחיל תמיד. </li>
+                    <li> יש שלוש דרכים לנצח את המשחק: </li>
+                    <li> הראשון לשים את O הוא X שלו לאורך כל השורה זוכה. </li>
+                    <li> הראשון לשים את השלט שלו לאורך כל העמודה זוכה. </li>
+                    <li> הראשון לשים את השלט שלו לאורך כל האלכסון מנצח. </li>
+                    <li> אם אף אחד לא ניצח והשולחן מלא אז זה שוויון. </li>
+            </ul>
+        </div>
+        <button id="continue" hidden>המשך</button>
+        <h2 id="gameOver" class="gameOver" hidden>סוף המשחק</h2>
+        <h2 id="congX" class="gameOver" hidden>
+       !ניצח X שחקן
+        </h2>
+        <h2 id="congO" class="gameOver" hidden>
+        !ניצח O שחקן
+        </h2>
+        <h1 id="tie" class="gameOver" hidden>
+        !תיקו
+        </h1>
+        <br><br><br><br><br>
+        <div id="titleQu">השאלה</div>
+        <br>
+        <div id="quPresent"></div>
+        <h2 id="gameOver" class="gameOver" hidden>סוף המשחק</h2>
+        <h2 id="congX" class="gameOver" hidden>
+        !ניצח X שחקן
+        </h2>
+        <h2 id="congO" class="gameOver" hidden>
+        !ניצח O שחקן
+        </h2>
+        <h2 id="tie" class="gameOver" hidden>
+        !תיקו
+        </h2>
+        <br><br>
+    </div>
+
+    <br>
+    <!-- end of tic tac toe game -->
+    <!-- start of researching -->
+    <div id="researching" hidden>
+        <div id="article">
+            הנה מאמר קצר לקרוא עליו על גיימינג. כדי לקרוא את המאמר עליך ללחוץ על התמונה למטה ↓↓↓ לאחר קריאת ה-
+            <br><br>
+            <a id="roboticsArticle" href="https://www.youtube.com/watch?v=8r-pR3-pZr4" target="_blank">
+                <img src="https://www.fbrisr.com/wp-content/uploads/2021/03/EN_16BR_Social_KeyArt_Social.0-1024x683.jpg" id ="oneP" height="576" width="824" title="מאמר">
+            </a>
+        </div>
+        <br><br><br><br>
+        <div id="video" hidden>
+            הנה סרטון קצר על גיימינג ( ).
+            <br>
+            צפו בסרטון למטה ↓↓↓ ואחרי זה התגלגלו למטה
+            <br><br>
+            <a id="roboticsVideo" href="https://gamerz.co.il/" target="_blank">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/20/50/gamer-boy-mascot-esport-logo-design-vector-30912050.jpg"  alt="video" id ="oneP1" height="400" width="478" title="סרטון גיימינג">
+            </a>
+        </div>
+        <div id="questions" hidden>
+            לחץ על הכפתור למטה כדי לענות על השאלות בנושא גיימינג ↓↓↓
+            <br><br>
+            <a id="quForm" href="" target="_blank">
+                <button id="quFormBut">לשאלות</button>
+            </a>
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <br><br><br><br><br>
+    </div>
+    
+<div id="dfs">
+
+<h1>סיימתם את המשחק</h1>
+
+</div>
+    
+
+    <script src="appNat.js"></script>
+</body>
+</html>
