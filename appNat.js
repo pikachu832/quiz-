@@ -21,7 +21,8 @@ let video=document.getElementById('video');
 let article=document.getElementById('article');
 let quFormBut = document.getElementById('quFormBut');
 
-
+// קוד משנה שעברה
+// אמת הוא לא ממש משהו יש עוד הרבה מה לשפר אבל לא נורא
 
 submitButton.addEventListener('click' , function()
 {
